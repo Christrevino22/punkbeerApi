@@ -5,3 +5,8 @@ img {
 .beer-tagline {
   display: block;
 }
+button {
+  background-color: red;
+  position: relative;
+  
+}
