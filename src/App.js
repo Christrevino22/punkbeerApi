@@ -1,9 +1,7 @@
 import "./App.css";
 import React, { Component } from "react";
 import Beer from "./components/Beer";
-import Like from "./components/LikeButton"
 
-import { computeHeadingLevel } from '@testing-library/react';
 
 class App extends Component {
   constructor(props) {
@@ -11,12 +9,13 @@ class App extends Component {
 
     this.state = {
       beers: [],
+
     };
   }
 
-  handleClick = () => {
-    this.setState({ count: this.state.count + 1 });
-  };
+  // handleClick = () => {
+  //   this.setState({ count: this.state.count + 1 });
+  // };
 
   componentDidMount() {
     console.log("Mounted");
@@ -29,17 +28,24 @@ class App extends Component {
     console.log("I have updated");
   }
 
+    // handleClick(){
+    //   this.setState(state => ({
+    //       isToggleOn: !state.isToggleOn
+    //   }))
+    //   console.log(this.state);
+    // }
   render() {
     return (
       <div className="App">
         <ul>
           {this.state.beers &&
             this.state.beers.map((beer) => {
-              console.log(beer);
+              // console.log(beer);
 
-              return <Beer name={beer.name} tagline = {beer.tagline} tips = {beer.brewers_tips} image = {beer.image_url} />;
+              return <Beer name={beer.name} tagline = {beer.tagline} tips = {beer.brewers_tips} image =  {beer.image_url}/>;
             })}
         </ul>
+     
         {/* <Like /> */}
         {/* <Beer />
         {console.log(this.state.beers)} */}
