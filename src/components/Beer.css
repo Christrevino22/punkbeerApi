@@ -5,8 +5,26 @@ img {
 .beer-tagline {
   display: block;
 }
-button {
-  background-color: red;
+/* button {
+  padding-right: 20px; */
+/* } */
+.btn__1 {
+  background-color: green;
+  color: deeppink;
   position: relative;
-  
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  float: right;
+}
+
+.btn__2 {
+  background-color: red;
+  color: black;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  float: right;
+  /* padding-right: 20px; */
 }
